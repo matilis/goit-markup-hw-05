@@ -183,10 +183,12 @@ a {
   height: 50px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button1:hover {
+.button1:hover,
+.button1:focus {
   color: var(--main-color);
   background-color: var(--team-color);
 }
+
 .button2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -199,7 +201,9 @@ a {
   cursor: pointer;
   padding: 6px 22px;
   border-radius: 4px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button2:hover,
 .button2:focus {
@@ -234,7 +238,7 @@ button:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .descrition-box:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -324,7 +328,8 @@ button:focus {
   align-items: center;
   justify-content: center;
   color: var(--border-customers);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .back-icon:hover,
 .back-icon:focus {
@@ -333,7 +338,6 @@ button:focus {
 }
 .social-icon {
   fill: currentColor;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icon:hover {
   fill: var(--background-color);
@@ -368,7 +372,7 @@ button:focus {
 }
 .gallery-img {
   display: block;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .gallery-img:hover,
 .gallery-img:focus {
@@ -478,7 +482,7 @@ button:focus {
   background-color: rgb(255, 255, 255, 0.1);
   border-radius: 50%;
   color: var(--background-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .back-icon-footer:hover,
 .back-icon-footer:focus {
@@ -496,7 +500,6 @@ button:focus {
   width: 528px;
   height: 581px;
   background-color: var(--background-color);
-
   display: flex;
   justify-content: flex-end;
   padding: 8px;
@@ -530,6 +533,8 @@ button:focus {
   justify-content: center;
   align-items: center;
 }
-.button-close:hover {
-  background-color: var(--background-color);
+.button-close:hover,
+.button-close:focus {
+  background-color: var(--backlight-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
